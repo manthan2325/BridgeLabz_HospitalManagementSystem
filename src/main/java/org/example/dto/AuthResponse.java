@@ -17,7 +17,9 @@ public class AuthResponse {
     // Default constructor
     public AuthResponse() {
     }
-
+    public AuthResponse(String token) {
+        this.token = token;
+    }
     // Parameterized constructor
     public AuthResponse(String token,String message,String password) {
         this.token = token;
