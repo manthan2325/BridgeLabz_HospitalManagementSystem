@@ -1,10 +1,7 @@
 package org.example.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 // Marks this class as a database entity.
 @Entity
@@ -21,6 +18,7 @@ import lombok.Setter;
 
 // Generates a constructor with all fields.
 @AllArgsConstructor
+@Builder
 public class Patient {
 
     // Primary key of the patients table.
